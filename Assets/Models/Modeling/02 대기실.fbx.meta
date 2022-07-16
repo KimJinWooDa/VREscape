@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Armrest
+    second: {fileID: 2100000, guid: ffbbe3186e80f03479c8b4f3c7499401, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Bottle-Label
     second: {fileID: 2100000, guid: 2fed7aff3a01ed44a8eb29007d0794b2, type: 2}
   - first:
@@ -24,6 +29,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Bottle-Plastic-A
     second: {fileID: 2100000, guid: 6f66027c9a1a9554497b4c3c3ba5f854, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottle-Plastic-B
+    second: {fileID: 2100000, guid: 613c58aa43d15ca4f986f3c612d4509d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
