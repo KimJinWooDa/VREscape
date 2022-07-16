@@ -5,12 +5,14 @@ using UnityEngine;
 public class EnterTheWaitingRoom : MonoBehaviour
 {
     public GameObject door;
+ 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             door.GetComponentInChildren<AudioSource>().Play();
+            StartCoroutine(OFFSound());
         }
     }
 
