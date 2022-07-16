@@ -11,6 +11,7 @@ public class SuffleAudio : MonoBehaviour
     private void Awake()
     {
         AS = GetComponent<AudioSource>();
+        StartCoroutine(StartBGM());
     }
 
     IEnumerator StartBGM()
