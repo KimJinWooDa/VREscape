@@ -7,12 +7,13 @@ public class StartEffect : MonoBehaviour
     public GameObject Light;
     public AudioSource AS;
     public GameObject[] particles;
-
+    bool isOnce;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isOnce)
         {
             StartCoroutine(StartingEffect());
+            isOnce = true;
         }
     }
 

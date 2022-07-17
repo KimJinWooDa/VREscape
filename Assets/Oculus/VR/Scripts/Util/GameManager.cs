@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public bool[] isFalseObjects;
 
     public GameObject[] lights;
-
+    public GameObject destroy;
     void Awake()
     {
         if (null == instance)
@@ -43,5 +43,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
+    private void Update()
+    {
+            for(int i = 0; i < isTrueObjects.Length; i++)
+        {
+            if (!isTrueObjects[i]) return;
+        }
+        if (destroy != null ) Destroy(destroy);
+    }
 }
