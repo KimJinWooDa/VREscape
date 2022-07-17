@@ -13,7 +13,7 @@ public class Item : MonoBehaviour
     public enum itemState { 기계심장, 지푸라기, 용기물약 };
     public itemState IS;
 
-    public void CheckItemValue()
+    public void CheckItemValue(itemValue IV)
     {
         if(IV == itemValue.가짜)
         {
@@ -50,4 +50,6 @@ public class Item : MonoBehaviour
             }
         }
     }
+
+
 }
